@@ -11,7 +11,7 @@ LDFLAGS=-w -s -X $(PKG_BASE)/context.Version=${VERSION} -X $(PKG_BASE)/context.B
 IGNORE_LABEL?="cloud-cost-reducer-ignore"
 LDFLAGS+= -X $(PKG_BASE)/context.IgnoreLabel=$(IGNORE_LABEL)
 
-OWNER_LABEL?="owner"
+OWNER_LABEL?="project"
 LDFLAGS+= -X $(PKG_BASE)/context.OwnerLabel=$(OWNER_LABEL)
 
 RESOURCE_GROUPING_LABEL?="cloudera-environment-resource-name"
